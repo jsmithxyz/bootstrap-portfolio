@@ -1,0 +1,47 @@
+body {
+    background-image: url("assets/images/gravel.png");
+}
+
+.container {
+    width: 960px;
+}
+.col-md-12 {
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+.col-md-9 {
+    background-color: #ffffff;
+}
+
+.col-md-3 {
+    background-color: #ffffff;
+}
+
+#navbar {
+    margin-top: 0px;
+}
+
+#aboutmeH1 {
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+.card-title {
+    background-color: #4aaaa5;
+    text-align: center;
+    width: 210px;
+    position: absolute;
+    bottom: 8%;
+    right: 0px;
+}
+#me {
+    float: left;
+    padding: 10px;
+}
+
+#aboutme img {
+    float: left;
+}
+ 
