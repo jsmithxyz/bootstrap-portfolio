@@ -12,52 +12,71 @@
     <title>Jordan Smith Portfolio</title>
 </head>
 
-<body>    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12" id="navbar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Jordan Smith</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                    
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>       
-            </nav>
-            </div> 
-        </div>
-        <!--Row 1-->
-        <div class="row">
-            <div class="col-md-12">
-            <!--Sub-Row of Row 1-->
-            <div class="row">
-                <div class="col-md-12" id="aboutmeH1">
-                    <h1>About Me</h1>
+<body class="d-flex flex-column h-100"> 
+    <!--Fluid Container to span across window-->   
+    <div class="container-fluid">
+            
+            <div class="container">
+                <div class="row">
+                <div class="col-md-3" id="logo">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="about.html">Jordan Smith</a>
+                    </nav>
+                </div>
+                <div class="col-md-9" id="listlinks">
+                <ul class="nav justify-content-end" id="links">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                </ul>
+                </div>
                 </div>
             </div>
-            <!--Sub-Row of Row 1-->
-            <div class="row">
+    </div>
+
+    <div class="container">  
+        <!--Row 1 (holds content)-->
+        <div class="row">
+            <div class="col-md-12">
+            <!--Sub-Row of Row 1 (heading)-->
+            <div class="row" id="header">
+                <div class="col-md-12" id="headerH2">
+                    <h2><strong>About Me</strong></h2>
+                </div>
+            </div>
+            <!--Sub-Row of Row 1 (image and paragraphs-->
+            <div class="row" id="content">
                 <div class="col-md-3">
-                    <img src="https://placehold.it/200x200" alt="..." class="img-thumbnail">
+                    <img src="assets/images/me1.jpg" alt="..." class="img-thumbnail">
                  </div>
                  <div class="col-md-9">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sint necessitatibus labore dolores, facilis amet praesentium voluptatibus soluta eaque veritatis molestiae, dolor corrupti in fugiat delectus tempore, sunt dignissimos aut!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veritatis error, ex earum ad optio aut sequi exercitationem necessitatibus ratione blanditiis saepe a impedit quas voluptates modi! Neque, pariatur nihil.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolore tenetur eius expedita perspiciatis eligendi, mollitia quae sapiente quaerat numquam error consectetur dolores natus similique neque repudiandae placeat autem molestias?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iusto nesciunt cupiditate quo perferendis suscipit, qui blanditiis repudiandae laborum et, nam ipsa iste odit magnam error veritatis magni fugit sunt!</p>
+                    <p>
+                        A graduate from Kutztown University with a degree in Pure Mathematics, Jordan Smith is an academically trained problem solver and logical thinker. For the past 7 years post-graduation, Jordan has utilized this background in the field of Sales and Marketing.
+                      </p>
+          
+                      <p>
+                        Jordan has worked for Barnes and Noble (Nook Sales/Technician), Mondelez Inc. (Nabisco Sales Representative), and most recently, Market Resource Partners in Philadelphia, PA. During his time there, Jordan managed multitdue of campaigns for differenct clients including Google, Oracle, HPE, Splunk, and Veritas.
+                      </p>
+          
+                      <p>
+                        Outside of work, Jordan enjoys reading comics, working on his podcast, playing music with his best friends, and watching the Sixers continue their quest for an NBA Championship.
+                      </p>                 
                 </div>
             </div>
             </div>   
         </div>
     </div>
+    <!--Sticky Footer-->
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+          <span class="text-white">Copyright 2019</span>
+        </div>
+      </footer>
+</body>
+</html>

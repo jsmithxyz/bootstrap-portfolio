@@ -1,47 +1,147 @@
-body {
-    background-image: url("assets/images/gravel.png");
+* {
+    box-sizing: border-box;
 }
 
+body {
+    background-image: url("assets/images/gravel.png");
+    min-height: 100vh;
+}
+.container-fluid{
+    background-color: #ffffff;
+}
 .container {
     width: 960px;
-}
-.col-md-12 {
-    background-color: #ffffff;
-    margin-top: 30px;
-}
-.col-md-9 {
-    background-color: #ffffff;
 }
 
 .col-md-3 {
     background-color: #ffffff;
 }
 
-#navbar {
-    margin-top: 0px;
+.col-md-4 {
+    background-color: #ffffff;
 }
 
-#aboutmeH1 {
+.col-md-9 {
+    background-color: #ffffff;
+}
+
+.col-md-12 {
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+
+#links {
+    padding-top: 8px;   
+}
+
+#name {
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+}
+
+.nav-link {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+.navbar-brand {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+#header {
+    padding: 10px;
+}
+
+#content {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#headerH2 {
     margin-top: 20px;
     background-color: #ffffff;
     color: #4aaaa5;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
+    border-bottom: 2px solid #dddddd;
+}
+
+.btn.btn-secondary {
+    background-color: #4aaaa5;
+    border: 1px #777777;
+}
+
+#form {
+    padding-bottom: 20px;
 }
 
 .card-title {
     background-color: #4aaaa5;
     text-align: center;
-    width: 210px;
+    width: 189px;
     position: absolute;
     bottom: 8%;
     right: 0px;
 }
-#me {
-    float: left;
-    padding: 10px;
+
+.card.bg-light.text-white {
+    margin: 10px;
 }
 
-#aboutme img {
-    float: left;
+p {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
- 
+
+footer {
+     background-color: #666666;
+     border-top: 8px solid #4aaaa5;
+     text-align: center;
+     height: 60px;
+ }
+
+ @media screen and (max-width: 640px) {
+    #listlinks, #logo {
+        display: flex;
+        justify-content: center;   
+    }
+    #logo {
+        display: flex;
+        justify-content: center;
+        background-color: #4aaaa5;
+    }
+    .card-title {
+        width: 489px;
+    }
+    .img-thumbnail {
+        margin-bottom: 20px;
+    }
+ }
+
+ @media screen and (max-width: 575px) {
+    #listlinks, #logo {
+        display: flex;
+        justify-content: center;   
+    }
+    #logo {
+        display: flex;
+        justify-content: center;
+        background-color: #4aaaa5;
+        width: 100%;
+    }
+    .card-title {
+        width: 489px;
+    }
+    .img-thumbnail {
+        margin-bottom: 20px;
+    }
+    .container-fluid, .container {
+        width: 100%;
+        margin: auto;
+    }
+    .card-title {
+        width: 525px;
+    }
+ }

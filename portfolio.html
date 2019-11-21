@@ -12,91 +12,102 @@
     <title>Jordan Smith Portfolio</title>
 </head>
 
-<body>    
-    <div class="container">
-        <!--Navbar row-->
-        <div class="row">
-            <div class="col-md-12" id="navbar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <a class="navbar-brand" href="#">Jordan Smith</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                    
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>       
-            </nav>
-            </div> 
-        </div>
+<body class="d-flex flex-column h-100"> 
+    <!--Fluid Container to span across window-->   
+    <div class="container-fluid">
+            
+            <div class="container">
+                <div class="row">
+                <div class="col-md-3" id="logo">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="about.html">Jordan Smith</a>
+                    </nav>
+                </div>
+                <div class="col-md-9" id="listlinks">
+                <ul class="nav justify-content-end" id="links">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                </ul>
+                </div>
+                </div>
+            </div>
+    </div>
 
+    <div class="container">
+        <!--Main Row-->
         <div class="row">
-            <!--Main Row-->
             <div class="col-md-12">
                 <!--Sub-Row 1-->
-                <div class="row">
-                    <div class="col-md-12" id="aboutmeH1">
-                        <h1>Portfolio</h1>
+                <div class="row" id="header">
+                    <div class="col-md-12" id="headerH2">
+                        <h2><strong>Portfolio</strong></h2>
                     </div>
                 </div>
                 <!--Sub-Row 2-->
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="card bg-dark text-white">
-                            <img src="assets/images/mario.jpg" class="card-img" alt="...">
+                        <div class="card bg-light text-white">
+                            <img src="assets/images/mario.jpg" class="card-img" alt="Game">
                                 <div class="card-img-overlay">
-                                    <h3 class="card-title">Card title</h3>
+                                    <h4 class="card-title">Game</h4>
                                 </div>
                         </div>
                     </div>
 
                     <div class="col-md-3">
-                            <div class="card bg-dark text-white">
-                                <img src="assets/images/mario.jpg" class="card-img" alt="...">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Card title</h3>
-                                    </div>
-                            </div>
+                        <div class="card bg-light text-white">
+                            <img src="assets/images/mario.jpg" class="card-img" alt="Food App">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Food App</h4>
+                                </div>
                         </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card bg-light text-white">
+                            <img src="assets/images/mario.jpg" class="card-img" alt="GPS">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">GPS App</h4>
+                                </div>
+                        </div>
+                    </div>
                 </div>
                 <!--Sub-Row 3-->
-                <div class="row">
-                        <div class="col-md-3">
-                            <div class="card bg-dark text-white">
-                                <img src="assets/images/mario.jpg" class="card-img" alt="...">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Card title</h3>
-                                    </div>
+             <div class="row">
+                <div class="col-md-3">
+                    <div class="card bg-light text-white">
+                        <img src="assets/images/mario.jpg" class="card-img" alt="Sports App">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">Sports App</h4>
                             </div>
-                        </div>
+                    </div>
+                </div>
     
-                        <div class="col-md-3">
-                            <div class="card bg-dark text-white">
-                                <img src="assets/images/mario.jpg" class="card-img" alt="...">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Card title</h3>
-                                    </div>
+                <div class="col-md-3">
+                    <div class="card bg-light text-white">
+                        <img src="assets/images/mario.jpg" class="card-img" alt="Workout Tracker">
+                             <div class="card-img-overlay">
+                                <h4 class="card-title">Workout Tracker</h4>
                             </div>
-                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="row">
-                        <div class="col-md-3">
-                            <div class="card bg-dark text-white">
-                                <img src="assets/images/mario.jpg" class="card-img" alt="...">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Card title</h3>
-                                    </div>
-                            </div>
-                        </div>
-                </div>
         </div>
+    </div>
+    </div>
+        <!--Sticky Footer-->
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+              <span class="text-white">Copyright 2019</span>
+            </div>
+          </footer>
+    </body>
+</html>
